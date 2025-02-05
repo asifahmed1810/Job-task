@@ -3,11 +3,24 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
+import MainLayOut from '../Layout/MainLayOut';
+import Allusers from '../pages/Allusers';
+import Allproducts from '../pages/Allproducts';
 
 const router = createBrowserRouter([
     {
       path: "/",
-      element: <div className='text-5xl btn btn-primary'>Hello world!</div>,
+      element: <MainLayOut></MainLayOut>,
+      children:[
+        {
+          path:'/',
+          element:<Allusers></Allusers>
+        },
+        {
+          path:'products',
+          element:<Allproducts></Allproducts>
+        }
+      ]
     },
   ]);
 
