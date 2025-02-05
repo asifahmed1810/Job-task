@@ -6,6 +6,7 @@ import {
 import MainLayOut from '../Layout/MainLayOut';
 import Allusers from '../pages/Allusers';
 import Allproducts from '../pages/Allproducts';
+import UserDetails from '../pages/UserDetails';
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
         {
           path:'products',
           element:<Allproducts></Allproducts>
+        },
+        {
+          path:`userdetails/:id`,
+          element:<UserDetails></UserDetails>,
+          
         }
       ]
     },
