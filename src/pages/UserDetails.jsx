@@ -8,7 +8,7 @@ const UserDetails = () => {
     return (
         <div>
         <h2 className="font-semibold text-2xl">User Details</h2>
-        <div className="mt-4">
+        <div className="mt-10">
             <h3>Name: {user.name}</h3>
             <p><strong>Username:</strong> {user.username}</p>
             <p><strong>Email:</strong> {user.email}</p>
