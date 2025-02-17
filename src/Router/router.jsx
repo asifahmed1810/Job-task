@@ -8,6 +8,7 @@ import Allusers from '../pages/Allusers';
 import Allproducts from '../pages/Allproducts';
 import UserDetails from '../pages/UserDetails';
 import AddProducts from '../pages/AddProducts';
+import DeleteProduct from '../pages/DeleteProduct';
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         {
           path:'add-product',
           element:<AddProducts></AddProducts>
+        },
+        {
+          path:'delete-product',
+          element:<DeleteProduct></DeleteProduct>
         }
       ]
     },
